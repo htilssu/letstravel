@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Web</title>
+    <!-- Link fontawesome -->
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Link slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Header section start -->
+    <header class="header">
+      <a href="#" class="logo">
+        <i class="fa-solid fa-person-hiking"></i> Travel.</a
+      >
+
+      <nav class="navbar">
+        <div id="nav-close" class="fas fa-times"></div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#shop">Shop</a>
+        <a href="#packages">Packages</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#Blogs">Blogs</a>
+      </nav>
+
+      <div class="icon">
+        <div id="menu-btn" class="fa-solid fa-bars"></div>
+        <a href="#cart"><i class="fa-solid fa-cart-shopping"></i></a>
+        <div id="search-bar" class="fas fa-search"></div>
+      </div>
+    </header>
+    <!-- Header section end -->
+
+    <!-- Search form  -->
+    <form action="" id="search-form" class="search-form">
+      <div id="search-close" class="fas fa-times"></div>
+      <div class="search">
+        <div class="search-box">
+          <input id="search-text" type="text" placeholder="Search..." />
+          <div id="search-delete" class="fas fa-times"></div>
+        </div>
+        <div id="search-action" class="fas fa-search"></div>
+      </div>
+    </form>
+
+    <!-- Section home start -->
+    <section class="home" id="home" style="height: 100%">
+      <div class="home-slider">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide"
+            style="
+              background: url('https://images.unsplash.com/photo-1599423423927-a2c777b40faa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80')
+                no-repeat;
+              background-size: cover;
+            "
+          >
+            <div class="content">
+              <span>Nerver stop</span>
+              <h3>Exploring</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error
+                voluptatem iste quaerat rerum enim dolorum at, repudiandae
+                necessitatibus, iure voluptates esse magnam deserunt.
+              </p>
+              <a href="" class="btn">Get started</a>
+            </div>
+          </div>
+
+          <div
+            class="swiper-slide"
+            style="
+              background: url('https://images.unsplash.com/photo-1587221703223-181d78a8fc4c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1173&q=80');
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          >
+            <div class="content">
+              <span>Nerver stop</span>
+              <h3>Make tour</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error
+                voluptatem iste quaerat rerum enim dolorum at, repudiandae
+                necessitatibus, iure voluptates esse magnam deserunt.
+              </p>
+              <a href="" class="btn">Get started</a>
+            </div>
+          </div>
+
+          <div
+            class="swiper-slide child"
+            style="
+              background: url('https://images.unsplash.com/photo-1527856263669-12c3a0af2aa6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          >
+            <div class="content">
+              <span>Nerver stop</span>
+              <h3>Exploring</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error
+                voluptatem iste quaerat rerum enim dolorum at, repudiandae
+                necessitatibus, iure voluptates esse magnam deserunt.
+              </p>
+              <a href="" class="btn">Get started</a>
+            </div>
+          </div>
+
+          <div
+            class="swiper-slide"
+            style="
+              background: url('https://images.unsplash.com/photo-1605039316064-c65942f60f5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          >
+            <div class="content">
+              <span>Nerver stop</span>
+              <h3>Exploring</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error
+                voluptatem iste quaerat rerum enim dolorum at, repudiandae
+                necessitatibus, iure voluptates esse magnam deserunt.
+              </p>
+              <a href="" class="btn">Get started</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
+
+    <!-- Section home end -->
+
+    <!-- Category section start -->
+
+    <section class="category">
+      <h1 class="heading">Adventure</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img
+            src="https://images.unsplash.com/photo-1531141445733-14c2eb7d4c1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=465&q=80"
+            alt=""
+          />
+          <h3>Sailing</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            placeat, deleniti ex odio impedit unde illum necessitatibus amet?
+            Pariatur perspiciatis itaque veritatis ipsam voluptas animi hic
+            accusamus ab iure deserunt!
+          </p>
+          <a href="#">Readmore.</a>
+        </div>
+
+        <div class="box">
+          <img
+            src="https://images.unsplash.com/photo-1559677624-3c956f10d431?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80"
+            alt=""
+          />
+          <h3>Bungge jump</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            placeat, deleniti ex odio impedit unde illum necessitatibus amet?
+            Pariatur perspiciatis itaque veritatis ipsam voluptas animi hic
+            accusamus ab iure deserunt!
+          </p>
+          <a href="#">Readmore.</a>
+        </div>
+
+        <div class="box">
+          <img
+            src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+          <h3>Nice View</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            placeat, deleniti ex odio impedit unde illum necessitatibus amet?
+            Pariatur perspiciatis itaque veritatis ipsam voluptas animi hic
+            accusamus ab iure deserunt!
+          </p>
+          <a href="#">Readmore.</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category section end -->
+
+    <!-- Link custom scripts -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script src="/scripts.js"></script>
+
+    <script>
+      const swiper = new Swiper('.home-slider', {
+        // Optional parameters
+        loop: true,
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        autoplay: {
+          disableOnInteraction: true,
+        },
+      });
+    </script>
+  </body>
+</html>

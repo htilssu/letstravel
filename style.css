@@ -1,0 +1,319 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500&display=swap');
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 60%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+  border-radius: 1rem;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Màu của thanh cuộn khi di chuột qua */
+}
+html::-webkit-scrollbar-track {
+  background: #fff;
+}
+html::-webkit-scrollbar-thumb {
+  background: #10221b;
+  border-radius: 4px;
+}
+
+body {
+  height: 100vh;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 1.5rem 9%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+}
+.header .logo {
+  margin-right: auto;
+  font-size: 3.5rem;
+  color: black;
+  font-weight: bolder;
+}
+.header .logo i {
+  color: #219050;
+}
+.header .navbar a {
+  margin-left: 2rem;
+  font-size: 1.8rem;
+  color: #10221b;
+}
+.header .navbar a:hover {
+  color: #219050;
+}
+.header .navbar #nav-close {
+  font-size: 4rem;
+  cursor: pointer;
+  color: #10221b;
+  display: none;
+}
+.header .icon a,
+.header .icon div {
+  font-size: 2rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  color: #10221b;
+}
+.header .icon a:hover,
+.header .icon div:hover {
+  color: #219050;
+}
+.header #menu-btn {
+  display: none;
+}
+
+.search-form {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: -190%;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+.search-form.active {
+  top: 0;
+}
+.search-form #search-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 4rem;
+  color: white;
+}
+.search-form #search-close:hover {
+  color: #219050;
+}
+.search-form .search {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.search-form .search .search-box {
+  border-bottom: 1px solid #fff;
+  position: relative;
+  width: 40%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+}
+.search-form .search .search-box input {
+  width: 100%;
+  background: none;
+  font-size: 2rem;
+  margin-right: 3rem;
+  color: #fff;
+}
+.search-form .search .search-box #search-delete {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 2rem;
+}
+.search-form .search .search-box #search-delete:hover {
+  color: #219050;
+}
+.search-form .search #search-action {
+  font-size: 2rem;
+  margin-left: 1rem;
+  color: whitesmoke;
+}
+
+.home .home-slider .swiper-slide {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1rem;
+  padding: 2rem 9%;
+}
+.home .home-slider .swiper-slide .content {
+  max-width: 50rem;
+  font-size: 2rem;
+}
+.home .home-slider .swiper-slide .content span {
+  padding-bottom: 4rem;
+}
+.home .home-slider .swiper-slide .content h3 {
+  color: #219050;
+  font-size: 4rem;
+  margin: 3% 0;
+  text-transform: uppercase;
+}
+.home .home-slider .swiper-slide .content p {
+  line-height: 3rem;
+  letter-spacing: 1px;
+}
+.home .home-slider .swiper-slide .content a {
+  display: inline-block;
+  border: 1px solid #10221b;
+  color: #10221b;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+  background: none;
+}
+.home .home-slider .swiper-slide .content a:hover {
+  background-color: #219050;
+  color: #fff;
+}
+.home .home-slider .swiper-slide.child .content p {
+  color: #fff;
+}
+.home .home-slider .swiper-slide.child .content h3 {
+  color: #20d26a;
+}
+.home .home-slider .swiper-slide.child .content a {
+  border: 1px solid #fff;
+  color: #fff;
+}
+.home .home-slider .swiper-button-prev::after,
+.home .home-slider .swiper-button-next::after {
+  font-size: 4rem;
+  color: #10221b;
+}
+
+.category {
+  display: block;
+}
+.category .heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 4rem;
+  color: #219050;
+  text-transform: uppercase;
+  padding-top: 2rem;
+}
+.category .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  gap: 3rem;
+}
+.category .box-container .box {
+  text-align: center;
+}
+.category .box-container .box h3 {
+  font-size: 2.5rem;
+}
+.category .box-container .box p {
+  font-size: 1.6rem;
+  padding: 2rem 1rem;
+  line-height: 2.5rem;
+  text-align: left;
+}
+.category .box-container .box a {
+  display: inline-block;
+  font-size: 2rem;
+  padding: 1.5rem 6%;
+  color: #10221b;
+  border: 1px solid #10221b;
+}
+.category .box-container .box a:hover {
+  background-color: #219050;
+  color: #fff;
+}
+.category .box-container img {
+  border-radius: 50%;
+  height: 20rem;
+  width: 20rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 2rem;
+  }
+}
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 768px) {
+  .header #menu-btn {
+    display: inline-block;
+  }
+  .header .icon a,
+  .header .icon div {
+    font-size: 2.5rem;
+  }
+  .header .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 99999;
+    width: 30rem;
+    height: 100%;
+    box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-100%);
+  }
+  .header .navbar.active {
+    transform: translateX(0);
+    box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.7);
+  }
+  .header .navbar a {
+    margin: 1rem 0;
+    font-size: 2rem;
+  }
+  .header .navbar #nav-close {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+  }
+  .search-form .search .search-box {
+    width: 70%;
+  }
+  .home .home-slider .swiper-slide {
+    background-position: center !important;
+    background-size: cover !important;
+  }
+  .home .home-slider .swiper-button-prev::after,
+  .home .home-slider .swiper-button-next::after {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .search-form .search .search-box {
+    width: 80%;
+  }
+  .search-form .search .search-box input {
+    font-size: 2.2rem;
+  }
+} /*# sourceMappingURL=style.css.map */
