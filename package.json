@@ -3,6 +3,6 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "swiper": "^9.4.1"
+    "typed.js": "^2.0.132"
   }
 }
